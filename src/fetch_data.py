@@ -4,7 +4,7 @@ Downloads every raw dataset the project uses into data/raw/.
 Sources (all free, public CSVs on GitHub):
   - Basketball-Reference stats, draft history, team records:
     github.com/sumitrodatta/bball-reference-datasets
-  - Historical salaries and salary cap history:
+  - Historical salaries, salary cap history, and season-by-season RAPM:
     github.com/gabriel1200/site_Data
 
 Run once from the project root:
@@ -25,7 +25,9 @@ FILES = {
     "totals.csv": BREF + quote("Player Totals.csv"),
     "draft.csv": BREF + quote("Draft Pick History.csv"),
     "team_summaries.csv": BREF + quote("Team Summaries.csv"),
+    "career_info.csv": BREF + quote("Player Career Info.csv"),
     "salaries.csv": SALARY + "nba_salaries_master.csv",
+    "rapm.csv": SALARY + "rapm.csv",
     "contracts_current.csv": SALARY + "salary.csv",
     "cap.csv": SALARY + "cap.csv",
 }
